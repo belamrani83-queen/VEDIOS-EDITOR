@@ -1,0 +1,155 @@
+import { LanguageOption } from '../types';
+
+export const SUPPORTED_LANGUAGES: LanguageOption[] = [
+  {
+    code: 'ar-MA',
+    name: 'Arabic (Darija / Moroccan)',
+    nativeName: 'الدارجة المغربية',
+    flag: '🇲🇦',
+    direction: 'rtl',
+    voiceSpeaker: 'Kore',
+  },
+  {
+    code: 'ar',
+    name: 'Modern Standard Arabic',
+    nativeName: 'العربية الفصحى',
+    flag: '🌍',
+    direction: 'rtl',
+    voiceSpeaker: 'Kore',
+  },
+  {
+    code: 'en',
+    name: 'English',
+    nativeName: 'English (US/UK)',
+    flag: '🇺🇸',
+    direction: 'ltr',
+    voiceSpeaker: 'Puck',
+  },
+  {
+    code: 'fr',
+    name: 'French',
+    nativeName: 'Français',
+    flag: '🇫🇷',
+    direction: 'ltr',
+    voiceSpeaker: 'Zephyr',
+  },
+  {
+    code: 'es',
+    name: 'Spanish',
+    nativeName: 'Español',
+    flag: '🇪🇸',
+    direction: 'ltr',
+    voiceSpeaker: 'Charon',
+  },
+  {
+    code: 'de',
+    name: 'German',
+    nativeName: 'Deutsch',
+    flag: '🇩🇪',
+    direction: 'ltr',
+    voiceSpeaker: 'Fenrir',
+  },
+  {
+    code: 'it',
+    name: 'Italian',
+    nativeName: 'Italiano',
+    flag: '🇮🇹',
+    direction: 'ltr',
+    voiceSpeaker: 'Puck',
+  },
+  {
+    code: 'pt',
+    name: 'Portuguese',
+    nativeName: 'Português',
+    flag: '🇵🇹',
+    direction: 'ltr',
+    voiceSpeaker: 'Zephyr',
+  },
+  {
+    code: 'tr',
+    name: 'Turkish',
+    nativeName: 'Türkçe',
+    flag: '🇹🇷',
+    direction: 'ltr',
+    voiceSpeaker: 'Kore',
+  },
+  {
+    code: 'ja',
+    name: 'Japanese',
+    nativeName: '日本語',
+    flag: '🇯🇵',
+    direction: 'ltr',
+    voiceSpeaker: 'Kore',
+  },
+  {
+    code: 'zh',
+    name: 'Chinese',
+    nativeName: '中文 (Mandarin)',
+    flag: '🇨🇳',
+    direction: 'ltr',
+    voiceSpeaker: 'Puck',
+  },
+];
+
+export const MOTION_STYLES = [
+  {
+    id: 'turntable',
+    title: { ar: 'دوران ستوديو 360°', en: '360° Studio Turntable' },
+    description: {
+      ar: 'دوران سلس وفاخر للمنتج مع إضاءة ستوديو ناعمة وانعكاسات راقية',
+      en: 'Smooth 360-degree rotation showing all angles with subtle studio lighting reflection',
+    },
+    promptTemplate: 'A 360-degree smooth turntable showcase of this product on a sleek minimalist matte pedestal, commercial studio lighting, soft gentle reflections, 4k ultra-crisp commercial aesthetic.',
+    icon: 'RotateCw',
+  },
+  {
+    id: 'cinematic-orbit',
+    title: { ar: 'مدار سينمائي ديناميكي', en: 'Cinematic Dynamic Orbit' },
+    description: {
+      ar: 'حركة كاميرا سينمائية تدور ببطء وتكبير دقيق نحو تفاصيل المنتج',
+      en: 'Sweeping slow-motion cinematic camera orbit pushing into product textures and finish',
+    },
+    promptTemplate: 'A sweeping cinematic slow-motion camera orbit around this product, shallow depth of field, warm rim lighting highlights the textures, ultra-smooth premium commercial cinematography.',
+    icon: 'Video',
+  },
+  {
+    id: 'macro-reveal',
+    title: { ar: 'كشف ماكرو فائق الدقة', en: 'Macro Detail Reveal' },
+    description: {
+      ar: 'لقطة ماكرو مقربة جداً تبرز دقة التصنيع والخامات ثم ابتعاد الكاميرا',
+      en: 'Extreme close-up macro lens panning across fine crafted textures, then smooth pull-back',
+    },
+    promptTemplate: 'Extreme macro close-up glide across the fine details and textures of this product, lens flare and volumetric soft lighting, smooth pull back revealing the complete product in its glory.',
+    icon: 'Sparkles',
+  },
+  {
+    id: 'floating-luxury',
+    title: { ar: 'عوم فاخر وجزيئات مضيئة', en: 'Floating Luxury & Particles' },
+    description: {
+      ar: 'عوم خفيف للمنتج في الهواء مع جزيئات ذهبية وضوء درامي فخم',
+      en: 'Zero-gravity gentle floating product with subtle golden ambient dust particles and dramatic spotlight',
+    },
+    promptTemplate: 'The product hovers weightlessly in zero gravity with gentle micro-movements, subtle elegant ambient dust particles drifting through dynamic luxury ray beams, high-end perfume commercial style.',
+    icon: 'Feather',
+  },
+  {
+    id: 'dynamic-action',
+    title: { ar: 'حيوية وإثارة عصرية', en: 'Dynamic High-Energy Action' },
+    description: {
+      ar: 'حركة سريعة ومثيرة مناسبة للمنتجات الرياضية والتقنية والشبابية',
+      en: 'Snappy dynamic camera zooms, modern commercial speed ramps, and crisp vibrant lighting',
+    },
+    promptTemplate: 'Dynamic high-energy commercial camera moves, snappy quick pushes and orbital swoops, vibrant energetic studio light sweeps showcasing the modern build and performance.',
+    icon: 'Zap',
+  },
+  {
+    id: 'lighting-shift',
+    title: { ar: 'تدرج إضاءة نهارية إلى ليلية', en: 'Dramatic Lighting Shift' },
+    description: {
+      ar: 'تحول إضاءة ساحر من هدوء الفجر إلى سطوع النيون والظلال الأنيقة',
+      en: 'Dynamic shifting lighting moving across the product surface casting sculpted shadows',
+    },
+    promptTemplate: 'Dramatic shifting studio lights gliding across the product contours, highlighting edge bevels and sleek materials, transitioning from soft golden glow to crisp modern cool highlights.',
+    icon: 'SunMedium',
+  },
+];

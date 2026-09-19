@@ -1,0 +1,6 @@
+{
+  "name": "Product Video Studio AI",
+  "description": "Transform product photos into high-converting commercial videos with AI cinematic animation, multilingual scripts, and multi-language captions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
